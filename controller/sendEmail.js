@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
 
 
 const sendEmail = async (to,subject,html) => {
-    //console.log('Hello1 ');
+    console.log('Hello1 ');
    //return async(req,res) => {
         try{
             console.log('Hello2 ');

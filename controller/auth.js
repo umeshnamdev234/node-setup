@@ -3,7 +3,7 @@ require('dotenv').config();
 const SECRET_KEY = process.env.SECRET_KEY;
 const verifyToken = (req,res,next) => {
     const authToken = req.headers['authorization'];
-
+    
     if(!authToken){
         return res.status(401).json({
             message : "access denied",
